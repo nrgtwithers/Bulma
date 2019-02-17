@@ -1,14 +1,26 @@
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/grid/columns.sass";
+@import url('https://fonts.googleapis.com/css?family=Arapey|Lora');
 
 html,body{
     padding: 5px !important;
     background-color: white;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+a.navbar-item, a.navbar-link{
+    font-family: 'Arapey', serif !important;
+    height: 70px;
+    color: black;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 55px !important;
+    color: black !important;
+    /* font-weight: bold !important; */
+    font-family: 'Arapey', serif !important;
+}
+
+  .tabs ul{
+    border-bottom-style: none !important;
   }
