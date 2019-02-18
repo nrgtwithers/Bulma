@@ -24,3 +24,16 @@ h1{
   .tabs ul{
     border-bottom-style: none !important;
   }
+
+  button.button.is-rounded, button#showModal.button.is-rounded{
+    color: black;
+    font-family: 'Arapey', serif !important;
+    border-color:black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p.modal-card-title, .label{
+    font-family: 'Arapey', serif !important;
+
+  }

@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lo Garcia Photography - Bulma</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- <link rel="stylesheet" href="sass/layout/_all.sass"> -->
+    <!-- <link rel="stylesheet" href="css/bulma.css.map">
+    <link rel="stylesheet" href="css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/x.y.z/css/bulma.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
@@ -35,7 +41,10 @@
                     portfolio
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="publications.html">
+                    publications
+                </a>
+                <!-- <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         publications
                     </a>
@@ -73,39 +82,65 @@
                             Obsurae Magazine
                         </a>
                     </div>
-                </div>
-                <a class="navbar-item" href="contact.html">
-                    contact
+                </div> -->
+                <a class="navbar-item">
+                    <button class="button is-rounded" id="showModal">contact</button>
                 </a>
+                <div id="image-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title">Contact</p>
+                        <button id="image-modal-close" class="modal-close" aria-label="close"></button>
+                      </header>
+                      <section class="modal-card-body">
+                        <div class="field">
+                            <label class="label">Name*</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="">
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Email*</label>
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              </span>
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="">
+                            </div>
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                              <textarea class="textarea" placeholder=""></textarea>
+                            </div>
+                          </div>
+                      </section>
+                      <footer class="modal-card-foot">
+                        <button class="button is-rounded">Send</button>
+                      </footer>
+                    </div>
+                  </div>
                 <a class="navbar-item" href="mailto:logarciaphotography@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a class="navbar-item" href="https://www.instagram.com/lo_garciaphoto/"><i class="fab fa-instagram"></i></a>
-                <a class="navbar-item" href="https://www.facebook.com/logarciaphotography"><i class="fab fa-facebook"></i></a>
+                <a class="navbar-item" href="https://www.instagram.com/lo_garciaphoto/"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="navbar-item" href="https://www.facebook.com/logarciaphotography"><i
+                        class="fab fa-facebook"></i></a>
             </div>
         </div>
     </nav>
-    <div class="columns">
-        <div class="column">
-            <img src="assets/images/beauty.jpeg" alt="">
-        </div>
-        <div class="column">
-            <img src="assets/images/daniel.jpeg" alt="">
-        </div>
-        <div class="column">
-            <img src="assets/images/gorg.jpeg" alt="">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img src="assets/images/helly.jpeg" alt="">
-        </div>
-        <div class="column">
-            <img src="assets/images/damian.jpg" alt="">
-        </div>
-        <div class="column">
-            <img src="assets/images/glam.jpeg" alt="">
-        </div>
-    </div>
 
+<script src="assets/js/app.js"></script>
 </body>
 
 </html>
