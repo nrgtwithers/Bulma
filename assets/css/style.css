@@ -150,3 +150,9 @@ h1{
   width: 1200px;
   margin: auto;
 }
+
+.container{
+  max-width: 1200px !important;
+  margin: auto;
+  padding-top: 15px;
+}
