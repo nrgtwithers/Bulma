@@ -1,5 +1,17 @@
 // test
 // console.log('hello')
+
+//navbar responsive
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
 // Modal functionality
 var btn = document.querySelector('#showModal');
 var modalDlg = document.querySelector('#image-modal');
