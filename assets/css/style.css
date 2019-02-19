@@ -40,7 +40,7 @@ h1{
 
    p.title, p.modal-card-title, .label{
     font-family: 'Arapey', serif !important;
-    text-align: center !important;
+    /* text-align: center !important; */
   }
 
   /* carousel */
