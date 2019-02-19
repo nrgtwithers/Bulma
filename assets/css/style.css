@@ -38,9 +38,14 @@ h1{
     font-weight: bold;
   }
 
-   p.title, p.modal-card-title, .label{
+   p.modal-card-title, .label{
     font-family: 'Arapey', serif !important;
     /* text-align: center !important; */
+  }
+
+  p.title{
+    font-family: 'Arapey', serif !important;
+    text-align: center !important;
   }
 
   /* carousel */
