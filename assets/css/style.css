@@ -14,6 +14,11 @@ a.navbar-item, a.navbar-link{
     font-size: 18px;
 }
 
+a.navbar-item:hover{
+  background-color:white !important;
+  color: silver !important;
+}
+
 h1{
     font-size: 55px !important;
     color: black !important;
@@ -33,9 +38,9 @@ h1{
     font-weight: bold;
   }
 
-  p.modal-card-title, .label{
+   p.title, p.modal-card-title, .label{
     font-family: 'Arapey', serif !important;
-
+    text-align: center !important;
   }
 
   /* carousel */

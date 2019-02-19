@@ -1,5 +1,6 @@
-console.log('jellow')
-
+// test
+// console.log('hello')
+// Modal functionality
 var btn = document.querySelector('#showModal');
 var modalDlg = document.querySelector('#image-modal');
 var imageModalCloseBtn = document.querySelector('#image-modal-close');
@@ -11,6 +12,7 @@ imageModalCloseBtn.addEventListener('click', function(){
   modalDlg.classList.remove('is-active');
 });
 
+// Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -53,4 +55,15 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 2000); // Change image every 4 seconds
+}
+
+// Add the w3-red class to all opened accordions
+var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-red";
+} else { 
+  x.className = x.className.replace("w3-show", "");
+  x.previousElementSibling.className = 
+  x.previousElementSibling.className.replace("w3-red", "");
 }
